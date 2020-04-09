@@ -1,24 +1,21 @@
 # bitcoin-testnet-docker
 
-## Ubuntu 18.04
+A Docker container for the Bitcoin-testnet
 
-```bash
-## clone the bitcoin repository
-$ git clone https://github.com/bitcoin/bitcoin.git
+Ubuntu 18.04
 
-## change folders
-$ cd bitcoin
+Bitcoin Core version 0.17.1
 
-## check which versions are available
-$ git tag
+## Usage
+```git clone https://github.com/cly1213/bitcoin-testnet-docker.git```
 
-## find your desired version in the list, and then 'checkout'
-$ git checkout v0.17.1
+```cd bitcoin-testnet-docker```
 
-## now you can build:
-$ ./autogen.sh
-$ ./configure
-$ ./make
-$ sudo make install
-```
+```git clone https://github.com/bitcoin/bitcoin.git```
+
+```sudo docker build -t bitcoin-testnet-docker . --no-cache```
+
+```sudo docker run -t -i --name="bitcoin-testnet" bitcoin-testnet-docker /bin/bash```
+
+
 
