@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+MAINTAINER leo <leochen@nctu.edu.tw>
+
 RUN apt-get update
 RUN apt-get install build-essential autoconf autotools-dev automake libtool pkg-config libboost-all-dev libssl-dev libprotobuf-dev protobuf-compiler libevent-dev libqt4-dev libcanberra-gtk-module libdb-dev libdb++-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev qt5-default qttools5-dev-tools libdb++-dev bsdmainutils vim git wget make python3 sudo -y
 
